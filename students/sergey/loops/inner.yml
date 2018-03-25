@@ -1,0 +1,6 @@
+---
+- user:
+    name: "{{ item }}"
+    groups: "{{ outer_item.key }}"
+    append: yes
+  with_items: "{{ outer_item.value.members }}"

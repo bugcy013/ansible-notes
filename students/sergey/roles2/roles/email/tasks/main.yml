@@ -1,0 +1,3 @@
+---
+- include: setup_postfix.yml
+- include: setup_firewalld.yml
